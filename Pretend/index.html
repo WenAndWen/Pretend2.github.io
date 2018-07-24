@@ -15,12 +15,23 @@
 <script>
 document.write("<s"+"cript type='text/javascript' src='/js/test.js?"+Math.random()+"'></scr"+"ipt>");
 </script>
- 
+
+<body class="mdui-drawer-body-right">
+  <div class="mdui-drawer" id="left-drawer">
+    <button class="mdui-btn" mdui-drawer-close>关闭侧滑</button>
+  </div>
+  
+</body>
+
 <body>
+
+
+
+ 
 
 <div class="mdui-appbar mdui-appbar-fixed" style="background-color:#fff;">
   <div class="mdui-toolbar mdui-color-theme">
-    <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">menu</i></a>
+    <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons" mdui-drawer="{target: '#left-drawer'}">menu</i></a>
     <a href="javascript:;" class="mdui-typo-title">AppLua</a>
     <div class="mdui-toolbar-spacer"></div>
   <!--  <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>
